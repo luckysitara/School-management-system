@@ -1,6 +1,6 @@
  #!/usr/bin/python3
 
-for app in hostel extracurricular reporting integration security; do
+for app in inventory; do
     mkdir -p apps/$app/{migrations,templates/$app,static/$app/css}
     touch apps/$app/__init__.py
     touch apps/$app/admin.py
