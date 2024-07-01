@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     'apps.reporting',
     'apps.integration',
     'apps.security',
-    'apps,inventory',
+    'apps.inventory',
 
 ]
 

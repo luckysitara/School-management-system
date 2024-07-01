@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>School Management System</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">School Management System</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'user-list' %}">Users</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'profile-list' %}">Profiles</a>
+                </li>
+                <!-- Add nav links for Role, Permission, UserRole, UserActivityLog -->
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+    <footer>
+          <p>&copy; 2024 School Management System</p>
+    </footer>
+
+</body>
+</html>
+
